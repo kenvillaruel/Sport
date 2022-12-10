@@ -1,0 +1,226 @@
+body, html {
+  height: 100%;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("basketball-bg-3.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;  
+}
+
+
+
+.bg-img .title{
+font-size: 25px;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.bg-img .title::before{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+
+}
+
+
+.container {
+  position: absolute;
+  right: 0;  
+  margin: 20px;
+  max-width: 500px;
+  padding: 50px;
+  background-color: white;
+}
+
+form .gender-details .gender-title{
+  font-size: 25px;
+  font-weight: 200;
+ }
+ 
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+
+form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ 
+form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+form input[type="radio"]{
+   display: none;
+ } 
+ 
+ .checker .req-title{
+  font-size: 25px;
+  font-weight: 200;
+ }
+ 
+ .check{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+} 
+
+.check input {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ <!-- position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} -->
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 20px;
+  background-color: #eee;
+}
+
+
+.check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+<!--/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} 
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+} -->
+
+<!-- /* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} --> 
+ 
+ 
+<!--form .requirements .req-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ 
+ form .square{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+
+form .square label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ 
+form .square label .square{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #square-1:checked ~ .requirements label .one,
+ #square-2:checked ~ .requirements label .two,
+ #square-3:checked ~ .requirements label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+form input[type="checkbox"]{
+   display: none; -->
+ }
+
+  input[type=text], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1; 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+} 
